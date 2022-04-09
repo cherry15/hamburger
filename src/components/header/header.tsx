@@ -21,26 +21,54 @@ const Header = () => {
   }
 
   return (
-    <header className="header">
-      <div>Logo</div>
+    <header className='header'>
+      <NavLink
+        to={'/'}
+        className={`logo ({ isActive }) => (isActive ? 'active' : '')`}
+        aria-label='Home'
+      />
       <input
-        type="button"
+        type='button'
         className={`menuButton ${isMenuOpen ? 'open' : ''}`}
         aria-label={ariaMenuLabel}
         onClick={toggleMenu}
       />
       <ul className={`menu ${isMenuOpen ? 'open' : ''}`}>
         <li>
-          <NavLink to={'/about'} className={({ isActive }) => (isActive ? 'active' : '')} onClick={hideMenu} >About</NavLink>
+          <NavLink
+            to={'/about'}
+            className={({ isActive }) => (isActive ? 'active' : '')}
+            onClick={hideMenu}
+          >
+            About
+          </NavLink>
         </li>
         <li>
-        <NavLink to={'/cats'} className={({ isActive }) => (isActive ? 'active' : '')} onClick={hideMenu} >Cats</NavLink>
+          <NavLink
+            to={'/cats'}
+            className={({ isActive }) => (isActive ? 'active' : '')}
+            onClick={hideMenu}
+          >
+            Cats
+          </NavLink>
         </li>
         <li>
-        <NavLink to={'/dogs'} className={({ isActive }) => (isActive ? 'active' : '')} onClick={hideMenu} >Dogs</NavLink>
+          <NavLink
+            to={'/dogs'}
+            className={({ isActive }) => (isActive ? 'active' : '')}
+            onClick={hideMenu}
+          >
+            Dogs
+          </NavLink>
         </li>
         <li>
-        <NavLink to={'/contact'} className={({ isActive }) => (isActive ? 'active' : '')} onClick={hideMenu} >Contact</NavLink>
+          <NavLink
+            to={'/contact'}
+            className={({ isActive }) => (isActive ? 'active' : '')}
+            onClick={hideMenu}
+          >
+            Contact
+          </NavLink>
         </li>
       </ul>
     </header>
