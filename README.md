@@ -16,16 +16,6 @@ And install dependencies
 
 #### `npm i`
 
-If you get errors running the unit tests you will need to update the versions of react testing library
-
-#### `npm install --save-dev @testing-library/react@latest`
-
-#### `npm install --save-dev @testing-library/jest-dom@latest`
-
-#### `npm install --save-dev @testing-library/user-event@latest`
-
-Thanks to [Stackoverflow](https://stackoverflow.com/questions/71685441/react-testing-library-gives-console-error-for-reactdom-render-in-react-18) and [Ferel Ultra](https://stackoverflow.com/users/13959211/ferel-ultra)
-
 ## Available Scripts
 
 In the project directory, you can run:
